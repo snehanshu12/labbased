@@ -461,7 +461,7 @@ export default function App() {
       {/* Footer */}
       <footer className="lg:ml-64 p-8 border-t border-white/5 text-center text-zinc-500 text-sm">
         <p>© 2026 AgriYield AI. Built with advanced Machine Learning for sustainable farming.</p>
-        <p className="mt-1 font-medium text-brand-teal/50 italic">Built with AI</p>
+        <p className="mt-1 font-medium text-brand-teal/50 italic">Driven By ML</p>
       </footer>
     </div>
   );
