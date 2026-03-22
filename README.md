@@ -1,20 +1,23 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# AgriYield AI - Odisha Crop Prediction
 
-# Run and deploy your AI Studio app
+This project is ready to be deployed on Netlify.
 
-This contains everything you need to run your app locally.
+## Deployment Steps
 
-View your app in AI Studio: https://ai.studio/apps/dd8faf53-a22f-4498-bfae-e1dda67bf5c1
+1.  **Push to GitHub/GitLab/Bitbucket**: Ensure your code is in a remote repository.
+2.  **Connect to Netlify**:
+    -   Log in to [Netlify](https://www.netlify.com/).
+    -   Click "Add new site" > "Import an existing project".
+    -   Select your repository.
+3.  **Configure Build Settings**:
+    -   **Build command**: `npm run build`
+    -   **Publish directory**: `dist`
+    -   (These are already configured in `netlify.toml`)
+4.  **Set Environment Variables**:
+    -   Go to "Site settings" > "Environment variables".
+    -   Add `GEMINI_API_KEY` with your Google AI Studio API key.
+5.  **Deploy**: Click "Deploy site".
 
-## Run Locally
+## SPA Routing
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+The project includes a `netlify.toml` and `public/_redirects` file to handle client-side routing. This ensures that refreshing the page on a sub-route (if any are added in the future) works correctly.
