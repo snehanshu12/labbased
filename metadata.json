@@ -1,0 +1,5 @@
+{
+  "name": "AgriYield AI - Odisha Crop Prediction",
+  "description": "A professional AI-powered dashboard for predicting crop yields in Odisha using XGBoost and agricultural data insights.",
+  "requestFramePermissions": []
+}
